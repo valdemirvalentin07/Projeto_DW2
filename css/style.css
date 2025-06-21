@@ -1,0 +1,123 @@
+/* Reset box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Base HTML e Body */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #f8f9fa;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px; /* Espaço para navbar fixa */
+}
+
+/* Main ocupa espaço flexível */
+main {
+  flex-grow: 1;
+}
+
+/* Header e Navbar */
+.navbar-custom {
+  background-color: #0808B7;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #ffffff;
+}
+
+.navbar-custom .btn-outline-light {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.navbar-custom .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #0808B7;
+}
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 2px solid #0808B7;
+}
+
+.nav-tabs .nav-link {
+  color: #0808B7;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #0808B7;
+  color: #ffffff;
+  border-color: #0808B7 #0808B7 transparent;
+}
+
+/* Conteúdo das abas */
+.tab-pane {
+  min-height: 300px; /* Evita salto vertical ao trocar abas */
+  border: 1px solid #0808B7;
+  border-top: none;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+/* Form Controls */
+.form-control,
+.form-select {
+  border: 1px solid #0808B7;
+  border-radius: 5px;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+  color: #333333;
+}
+
+/* Botões */
+.btn-success {
+  background-color: #0b8f3c;
+  border-color: #0b8f3c;
+}
+
+.btn-primary {
+  background-color: #084298;
+  border-color: #084298;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  color: #000000;
+}
+
+/* Footer */
+.footer {
+  background-color: #0808B7;
+  color: #ffffff;
+  padding: 1rem 0;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+  box-sizing: border-box;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

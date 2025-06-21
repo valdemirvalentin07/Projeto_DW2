@@ -1,0 +1,68 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin-top: 75px; /* Para evitar que a navbar sobreponha conteúdo */
+   
+}
+.navbar-custom{
+    background-color: rgb(8, 8, 183);
+}
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #7286c0;
+  color: #fff;
+}
+
+
+/* Hero Section */
+.hero {
+    background: white;
+    padding: 50px 0;
+}
+
+.hero img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+h1,h2{
+    color: black;
+}
+
+.about img{
+    max-height: 400px;
+    object-fit: cover;
+    
+}
+
+.about{
+    padding: 50px 0;}
+  
+  
+
+
+   .footer{ 
+    background-color: rgb(8, 8, 183);
+    max-width: 100%;
+    padding: 10px;
+   
+
+   }
