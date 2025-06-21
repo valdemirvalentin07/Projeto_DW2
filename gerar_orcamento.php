@@ -30,6 +30,28 @@ if (!$ordem) {
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/ordem.css" />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    body {
+      flex: 1;
+    }
+
+    main.container {
+      flex: 1;
+    }
+
+    footer.footer {
+      margin-top: auto;
+      padding: 20px 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -54,7 +76,7 @@ if (!$ordem) {
 
 <div class="navbar-spacer"></div>
 
-<div class="container mt-5 mb-5" style="max-width:600px;">
+<main class="container mt-5 mb-5 p-4" style="max-width:600px;">
   <h2 class="text-center mb-4">Gerar Orçamento para Ordem #<?= $id ?></h2>
 
   <?php if (isset($_SESSION['mensagem'])): ?>
@@ -95,10 +117,10 @@ if (!$ordem) {
       <a href="ordens_cadastradas.php" class="btn btn-secondary">Voltar</a>
     </div>
   </form>
-</div>
+</main>
 
-<footer class="footer shadow mt-5" style="background-color: #0808B7;">
-  <div class="container text-center py-3">
+<footer class="footer shadow py-3" style="background-color: #0808B7;">
+  <div class="container text-center">
     <p class="text-white m-0">&copy; Thander Assistência Técnica 2025. Todos os direitos reservados.</p>
   </div>
 </footer>
